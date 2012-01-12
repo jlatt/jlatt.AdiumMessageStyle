@@ -6,11 +6,18 @@ html {
     html body a {
       color: #8db8e8; }
     html body .line {
-      margin: 2px 4px; }
+      margin: 2px 4px;
+      clear: left; }
       html body .line .time {
-        color: #555555; }
+        color: #555555;
+        float: left;
+        margin-right: 0.5em; }
       html body .line .sender {
-        color: #555555; }
+        color: #555555;
+        float: left;
+        margin-right: 0.5em; }
+      html body .line .text {
+        display: table-cell; }
       html body .line.incoming .sender .name {
         color: #60b042; }
       html body .line.outgoing .sender .name, html body .line.outgoing .text {
@@ -33,3 +40,5 @@ html {
       left: 0;
       width: 100%;
       text-align: center; }
+    html body #insert {
+      clear: left; }
