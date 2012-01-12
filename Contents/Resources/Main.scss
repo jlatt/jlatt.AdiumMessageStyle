@@ -1,0 +1,83 @@
+$foreground: #eee;
+$background: #000;
+$highlight-background: lighten($background, 15%);
+$auxiliary: #555;
+$notice: #999;
+$link: #8db8e8;
+$headline: #3083bc;
+$headline-background: rgba($background, 0.5);
+$incoming-name: #60b042;
+
+html {
+    color: $foreground;
+    background-color: $background;
+
+    body {
+	    margin: 0;
+
+        a {
+            color: $link;
+        }
+
+        .line {
+            margin: 2px 4px;
+
+            .time {
+                color: $auxiliary;
+            }
+
+            .sender {
+                color: $auxiliary;
+            }
+
+            &.incoming {
+                .sender .name {
+                    color: $incoming-name;
+                }
+            }
+
+            &.outgoing {
+                .sender .name, .text {
+                    color: $notice;
+                }
+            }
+
+            &.consecutive {
+                .sender, .time {
+                    visibility: hidden;
+                }
+            }
+
+            &.status, &.event {
+                .sender .name {
+                    color: $incoming-name;
+                }
+
+                .text {
+                    color: $notice;
+                }
+            }
+
+            &.mention {
+                background-color: $highlight-background;
+            }
+        }
+
+        .history {
+	        opacity: 0.5;
+        }
+
+
+        #topic {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        #insert {
+        }
+
+    }
+}
