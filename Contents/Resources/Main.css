@@ -23,6 +23,8 @@ html {
         color: #999999; }
       html body .line.mention {
         background-color: #262626; }
+        html body .line.mention .time {
+          color: #7b7b7b; }
     html body .history {
       opacity: 0.5; }
     html body #topic {

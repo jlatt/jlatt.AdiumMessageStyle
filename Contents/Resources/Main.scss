@@ -1,12 +1,13 @@
 $foreground: #eee;
 $background: #000;
-$highlight-background: lighten($background, 15%);
 $auxiliary: #555;
 $notice: #999;
 $link: #8db8e8;
 $headline: #3083bc;
-$headline-background: rgba($background, 0.5);
 $incoming-name: #60b042;
+$highlight-auxiliary: lighten($auxiliary, 15%);
+$highlight-background: lighten($background, 15%);
+$headline-background: rgba($background, 0.5);
 
 html {
     color: $foreground;
@@ -60,6 +61,10 @@ html {
 
             &.mention {
                 background-color: $highlight-background;
+
+                .time {
+                    color: $highlight-auxiliary;
+                }
             }
         }
 
