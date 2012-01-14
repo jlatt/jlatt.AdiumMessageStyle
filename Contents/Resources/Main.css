@@ -17,7 +17,8 @@ html {
         float: left;
         margin-right: 0.5em; }
       html body .line .text {
-        display: table-cell; }
+        display: table-cell;
+        word-wrap: break-word; }
       html body .line.incoming .sender .name {
         color: #60b042; }
       html body .line.outgoing .sender .name, html body .line.outgoing .text {
