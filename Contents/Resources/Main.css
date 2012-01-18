@@ -2,11 +2,12 @@ html {
   color: #eeeeee;
   background-color: black; }
   html body {
-    margin: 0; }
+    margin: 0;
+    line-height: 1.3em; }
     html body a {
       color: #8db8e8; }
     html body .line {
-      padding: 2px 4px;
+      padding: 0.1em;
       clear: left; }
       html body .line .time {
         color: #555555;

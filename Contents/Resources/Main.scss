@@ -15,13 +15,14 @@ html {
 
     body {
 	    margin: 0;
+        line-height: 1.3em;
 
         a {
             color: $link;
         }
 
         .line {
-            padding: 2px 4px;
+            padding: 0.1em;
             clear: left;
 
             .time {
