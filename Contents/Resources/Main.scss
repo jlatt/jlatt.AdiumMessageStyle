@@ -6,7 +6,6 @@ $link: #8db8e8;
 $headline: #3083bc;
 $incoming-name: #60b042;
 $highlight-auxiliary: lighten($auxiliary, 15%);
-$focus-background: lighten($background, 15%);
 $highlight-background: lighten($background, 25%);
 $headline-background: rgba($background, 0.5);
 
@@ -75,8 +74,8 @@ html {
                 }
             }
 
-            &.focus {
-                background-color: $focus-background;
+            &.firstFocus {
+                border-top: 0.1em solid $highlight-background;
             }
 
             &.mention {

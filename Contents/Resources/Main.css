@@ -30,8 +30,8 @@ html {
         color: #60b042; }
       html body .line.status .text, html body .line.event .text {
         color: #999999; }
-      html body .line.focus {
-        background-color: #262626; }
+      html body .line.firstFocus {
+        border-top: 0.1em solid #404040; }
       html body .line.mention {
         background-color: #404040; }
         html body .line.mention .time {
