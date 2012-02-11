@@ -6,7 +6,8 @@ $link: #8db8e8;
 $headline: #3083bc;
 $incoming-name: #60b042;
 $highlight-auxiliary: lighten($auxiliary, 15%);
-$highlight-background: lighten($background, 15%);
+$focus-background: lighten($background, 15%);
+$highlight-background: lighten($background, 25%);
 $headline-background: rgba($background, 0.5);
 
 html {
@@ -22,24 +23,26 @@ html {
         }
 
         .line {
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-pack: start;
             padding: 0.1em;
-            clear: left;
 
-            .time {
-                color: $auxiliary;
-                float: left;
+            .fixed {
+                -webkit-box-flex: 0;
                 margin-right: 0.5em;
-            }
 
-            .sender {
-                color: $auxiliary;
-                float: left;
-                margin-right: 0.5em;
+                .time {
+                    color: $auxiliary;
+                }
+
+                .sender {
+                    color: $auxiliary;
+                }
             }
 
             .text {
-                display: table-cell;
-                word-wrap: break-word;
+                -webkit-box-flex: 1;
             }
 
             // special styles
@@ -72,6 +75,10 @@ html {
                 }
             }
 
+            &.focus {
+                background-color: $focus-background;
+            }
+
             &.mention {
                 background-color: $highlight-background;
 
@@ -93,10 +100,5 @@ html {
             width: 100%;
             text-align: center;
         }
-
-        #insert {
-            clear: left;
-        }
-
     }
 }

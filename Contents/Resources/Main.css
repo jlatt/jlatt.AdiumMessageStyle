@@ -7,19 +7,19 @@ html {
     html body a {
       color: #8db8e8; }
     html body .line {
-      padding: 0.1em;
-      clear: left; }
-      html body .line .time {
-        color: #555555;
-        float: left;
+      display: -webkit-box;
+      -webkit-box-orient: horizontal;
+      -webkit-box-pack: start;
+      padding: 0.1em; }
+      html body .line .fixed {
+        -webkit-box-flex: 0;
         margin-right: 0.5em; }
-      html body .line .sender {
-        color: #555555;
-        float: left;
-        margin-right: 0.5em; }
+        html body .line .fixed .time {
+          color: #555555; }
+        html body .line .fixed .sender {
+          color: #555555; }
       html body .line .text {
-        display: table-cell;
-        word-wrap: break-word; }
+        -webkit-box-flex: 1; }
       html body .line.incoming .sender .name {
         color: #60b042; }
       html body .line.outgoing .sender .name, html body .line.outgoing .text {
@@ -42,5 +42,3 @@ html {
       left: 0;
       width: 100%;
       text-align: center; }
-    html body #insert {
-      clear: left; }
