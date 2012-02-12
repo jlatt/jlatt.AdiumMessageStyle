@@ -20,6 +20,8 @@ html {
           color: #555555; }
       html body .line .text {
         -webkit-box-flex: 1; }
+      html body .line .highlight {
+        display: none; }
       html body .line.incoming .sender .name {
         color: #60b042; }
       html body .line.outgoing .sender .name, html body .line.outgoing .text {
@@ -30,12 +32,13 @@ html {
         color: #60b042; }
       html body .line.status .text, html body .line.event .text {
         color: #999999; }
-      html body .line.firstFocus {
-        border-top: 0.1em solid #404040; }
-      html body .line.mention {
-        background-color: #404040; }
-        html body .line.mention .time {
-          color: #7b7b7b; }
+      html body .line.focus {
+        border-right: 2px solid blue; }
+      html body .line.mention .highlight {
+        display: block;
+        -webkit-box-flex: 0;
+        color: yellow;
+        margin-left: 0.5em; }
     html body .history {
       opacity: 0.5; }
     html body #topic {

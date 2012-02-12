@@ -44,6 +44,10 @@ html {
                 -webkit-box-flex: 1;
             }
 
+            .highlight {
+                display: none;
+            }
+
             // special styles
 
             &.incoming {
@@ -74,15 +78,16 @@ html {
                 }
             }
 
-            &.firstFocus {
-                border-top: 0.1em solid $highlight-background;
+            &.focus {
+                border-right: 2px solid blue;
             }
 
             &.mention {
-                background-color: $highlight-background;
-
-                .time {
-                    color: $highlight-auxiliary;
+                .highlight {
+                    display: block;
+                    -webkit-box-flex: 0;
+                    color: yellow;
+                    margin-left: 0.5em;
                 }
             }
         }
