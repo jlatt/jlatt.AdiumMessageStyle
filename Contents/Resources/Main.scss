@@ -63,7 +63,10 @@ html {
             }
 
             &.consecutive {
-                .sender, .time {
+                .time {
+                    visibility: hidden;
+                }
+                &.message .sender {
                     visibility: hidden;
                 }
             }

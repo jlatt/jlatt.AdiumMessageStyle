@@ -26,7 +26,9 @@ html {
         color: #60b042; }
       html body .line.outgoing .sender .name, html body .line.outgoing .text {
         color: #999999; }
-      html body .line.consecutive .sender, html body .line.consecutive .time {
+      html body .line.consecutive .time {
+        visibility: hidden; }
+      html body .line.consecutive.message .sender {
         visibility: hidden; }
       html body .line.status .sender .name, html body .line.event .sender .name {
         color: #60b042; }
