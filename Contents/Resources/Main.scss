@@ -66,13 +66,40 @@ a {
     .sender .name {
       color: $incoming-name;
     }
+    &.SenderColor .name {
+      &.one          { color: #60b042; }
+      &.two          { color: #7fffd4; }
+      &.three        { color: #66cd00; }
+      &.four         { color: #ff7f24; }
+      &.five         { color: #dc143c; }
+      &.six          { color: #6495ed; }
+      &.seven        { color: #eead0e; }
+      &.eight        { color: #8b008b; }
+      &.nine         { color: #bcee68; }
+      &.ten          { color: #8deeee; }
+      &.eleven       { color: #ff1493; }
+      &.twelve       { color: #ee2c2c; }
+      &.thirteen     { color: #ff6eb4; }
+      &.fourteen     { color: #9ac0cd; }
+      &.fifteen      { color: #fafad2; }
+      &.sixteen      { color: #32cd32; }
+      &.seventeen    { color: #e066ff; }
+      &.eighteen     { color: #ff4500; }
+      &.nineteen     { color: #fdf5e6; }
+      &.twenty       { color: #bbffff; }
+      &.twenty-one   { color: #ffc0cb; }
+      &.twenty-two   { color: #54ff9f; }
+      &.twenty-three { color: #00ff7f; }
+      &.twenty-four  { color: #eeee00; }
+      &.twenty-five  { color: #8b8b00; }
+    }
   }
 
   &.outgoing {
     .sender .name {
       color: $notice !important; // override sendercolor
     }
-    .message .text {
+    .text {
       color: $notice;
     }
   }

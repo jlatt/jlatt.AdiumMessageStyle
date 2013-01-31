@@ -1,1 +1,1 @@
-#60b042:#7FFFD4:#66CD00:#FF7F24:#DC143C:#6495ED:#EEAD0E:#8B008B:#BCEE68:#8DEEEE:#FF1493:#EE2C2C:#FF6EB4:#9AC0CD:#FAFAD2:#32CD32:#E066FF:#FF4500:#FDF5E6:#BBFFFF:#FFC0CB:#54FF9F:#00FF7F:#EEEE00:#8B8B00
+one:two:three:four:five:six:seven:eight:nine:ten:eleven:twelve:thirteen:fourteen:fifteen:sixteen:seventeen:eighteen:nineteen:twenty:twenty-one:twenty-two:twenty-three:twenty-four:twenty-five

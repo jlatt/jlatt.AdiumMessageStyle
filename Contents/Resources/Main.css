@@ -33,9 +33,59 @@ a {
     color: yellow; }
   .line.incoming .sender .name {
     color: #60b042; }
+  .line.incoming.SenderColor .name.one {
+    color: #60b042; }
+  .line.incoming.SenderColor .name.two {
+    color: #7fffd4; }
+  .line.incoming.SenderColor .name.three {
+    color: #66cd00; }
+  .line.incoming.SenderColor .name.four {
+    color: #ff7f24; }
+  .line.incoming.SenderColor .name.five {
+    color: #dc143c; }
+  .line.incoming.SenderColor .name.six {
+    color: #6495ed; }
+  .line.incoming.SenderColor .name.seven {
+    color: #eead0e; }
+  .line.incoming.SenderColor .name.eight {
+    color: #8b008b; }
+  .line.incoming.SenderColor .name.nine {
+    color: #bcee68; }
+  .line.incoming.SenderColor .name.ten {
+    color: #8deeee; }
+  .line.incoming.SenderColor .name.eleven {
+    color: #ff1493; }
+  .line.incoming.SenderColor .name.twelve {
+    color: #ee2c2c; }
+  .line.incoming.SenderColor .name.thirteen {
+    color: #ff6eb4; }
+  .line.incoming.SenderColor .name.fourteen {
+    color: #9ac0cd; }
+  .line.incoming.SenderColor .name.fifteen {
+    color: #fafad2; }
+  .line.incoming.SenderColor .name.sixteen {
+    color: #32cd32; }
+  .line.incoming.SenderColor .name.seventeen {
+    color: #e066ff; }
+  .line.incoming.SenderColor .name.eighteen {
+    color: #ff4500; }
+  .line.incoming.SenderColor .name.nineteen {
+    color: #fdf5e6; }
+  .line.incoming.SenderColor .name.twenty {
+    color: #bbffff; }
+  .line.incoming.SenderColor .name.twenty-one {
+    color: #ffc0cb; }
+  .line.incoming.SenderColor .name.twenty-two {
+    color: #54ff9f; }
+  .line.incoming.SenderColor .name.twenty-three {
+    color: #00ff7f; }
+  .line.incoming.SenderColor .name.twenty-four {
+    color: #eeee00; }
+  .line.incoming.SenderColor .name.twenty-five {
+    color: #8b8b00; }
   .line.outgoing .sender .name {
     color: #999999 !important; }
-  .line.outgoing .message .text {
+  .line.outgoing .text {
     color: #999999; }
   .line.consecutive .time {
     visibility: hidden; }
