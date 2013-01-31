@@ -3,11 +3,14 @@ $background: #000;
 $auxiliary: #555;
 $notice: #999;
 $link: #8db8e8;
+$link-hover: lighten($link, 10%);
+$link-active: darken($link, 10%);
 $headline: #3083bc;
 $incoming-name: #60b042;
 $highlight-auxiliary: lighten($auxiliary, 15%);
 $highlight-background: lighten($background, 25%);
-$headline-background: rgba($background, 0.5);
+$headline-background: lighten($background, 15%);
+$highlight-color: yellow;
 
 html {
   color: $foreground;
@@ -16,38 +19,45 @@ html {
 
 body {
 	margin: 0;
-  line-height: 1.3em;
+  line-height: 1.4em;
 }
 
 a {
   color: $link;
+  &:hover {
+    color: $link-hover;
+  }
+  &:active {
+    color: $link-active;
+  }
 }
 
 .line {
   display: -webkit-box;
-  -webkit-box-orient: horizontal;
-  -webkit-box-pack: start;
-  padding: 0.1em;
+  -webkit-box-orient: horizontal; -webkit-box-pack: start;
+  padding: 0 0.25em;
 
   .fixed {
     -webkit-box-flex: 0;
-    margin-right: 0.5em;
-
-    .time {
-      color: $auxiliary;
-    }
-
-    .sender {
-      color: $auxiliary;
-    }
   }
 
-  .text {
+  .flexible {
     -webkit-box-flex: 1;
+  }
+
+  .time {
+    margin-right: 0.5em;
+    color: $auxiliary;
+  }
+
+  .sender {
+    color: $auxiliary;
   }
 
   .highlight {
     display: none;
+    margin-left: 0.5em;
+    color: $highlight-color;
   }
 
   // special styles
@@ -59,7 +69,10 @@ a {
   }
 
   &.outgoing {
-    .sender .name, .text {
+    .sender .name {
+      color: $notice !important; // override sendercolor
+    }
+    .message .text {
       color: $notice;
     }
   }
@@ -68,8 +81,8 @@ a {
     .time {
       visibility: hidden;
     }
-    &.message .sender {
-      visibility: hidden;
+    .sender {
+      display: none;
     }
   }
 
@@ -84,25 +97,22 @@ a {
   }
 
   &.focus {
-    border-right: 2px solid blue;
+    border-right: 0.5em solid $highlight-color;
   }
 
   &.mention {
     .highlight {
       display: block;
-      -webkit-box-flex: 0;
-      color: yellow;
-      margin-left: 0.5em;
     }
   }
 }
 
 .history {
-	opacity: 0.5;
+	opacity: 0.75;
 }
 
 #topic {
-  position: fixed; top: 0; left: 0; width: 100%;
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1;
   text-align: center;
-  color: $headline; background-color: $headline-background;
+  color: $headline; background-color: $headline-background; opacity: 1;
 }

@@ -4,55 +4,62 @@ html {
 
 body {
   margin: 0;
-  line-height: 1.3em; }
+  line-height: 1.4em; }
 
 a {
   color: #8db8e8; }
+  a:hover {
+    color: #b7d2f1; }
+  a:active {
+    color: #639edf; }
 
 .line {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: start;
-  padding: 0.1em; }
+  padding: 0 0.25em; }
   .line .fixed {
-    -webkit-box-flex: 0;
-    margin-right: 0.5em; }
-    .line .fixed .time {
-      color: #555555; }
-    .line .fixed .sender {
-      color: #555555; }
-  .line .text {
+    -webkit-box-flex: 0; }
+  .line .flexible {
     -webkit-box-flex: 1; }
+  .line .time {
+    margin-right: 0.5em;
+    color: #555555; }
+  .line .sender {
+    color: #555555; }
   .line .highlight {
-    display: none; }
+    display: none;
+    margin-left: 0.5em;
+    color: yellow; }
   .line.incoming .sender .name {
     color: #60b042; }
-  .line.outgoing .sender .name, .line.outgoing .text {
+  .line.outgoing .sender .name {
+    color: #999999 !important; }
+  .line.outgoing .message .text {
     color: #999999; }
   .line.consecutive .time {
     visibility: hidden; }
-  .line.consecutive.message .sender {
-    visibility: hidden; }
+  .line.consecutive .sender {
+    display: none; }
   .line.status .sender .name, .line.event .sender .name {
     color: #60b042; }
   .line.status .text, .line.event .text {
     color: #999999; }
   .line.focus {
-    border-right: 2px solid blue; }
+    border-right: 0.5em solid yellow; }
   .line.mention .highlight {
-    display: block;
-    -webkit-box-flex: 0;
-    color: yellow;
-    margin-left: 0.5em; }
+    display: block; }
 
 .history {
-  opacity: 0.5; }
+  opacity: 0.75; }
 
 #topic {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
+  z-index: 1;
   text-align: center;
   color: #3083bc;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: #262626;
+  opacity: 1; }
