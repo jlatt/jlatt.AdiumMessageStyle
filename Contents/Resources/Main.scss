@@ -10,102 +10,99 @@ $highlight-background: lighten($background, 25%);
 $headline-background: rgba($background, 0.5);
 
 html {
-    color: $foreground;
-    background-color: $background;
+  color: $foreground;
+  background-color: $background;
+}
 
-    body {
-	    margin: 0;
-        line-height: 1.3em;
+body {
+	margin: 0;
+  line-height: 1.3em;
+}
 
-        a {
-            color: $link;
-        }
+a {
+  color: $link;
+}
 
-        .line {
-            display: -webkit-box;
-            -webkit-box-orient: horizontal;
-            -webkit-box-pack: start;
-            padding: 0.1em;
+.line {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: start;
+  padding: 0.1em;
 
-            .fixed {
-                -webkit-box-flex: 0;
-                margin-right: 0.5em;
+  .fixed {
+    -webkit-box-flex: 0;
+    margin-right: 0.5em;
 
-                .time {
-                    color: $auxiliary;
-                }
-
-                .sender {
-                    color: $auxiliary;
-                }
-            }
-
-            .text {
-                -webkit-box-flex: 1;
-            }
-
-            .highlight {
-                display: none;
-            }
-
-            // special styles
-
-            &.incoming {
-                .sender .name {
-                    color: $incoming-name;
-                }
-            }
-
-            &.outgoing {
-                .sender .name, .text {
-                    color: $notice;
-                }
-            }
-
-            &.consecutive {
-                .time {
-                    visibility: hidden;
-                }
-                &.message .sender {
-                    visibility: hidden;
-                }
-            }
-
-            &.status, &.event {
-                .sender .name {
-                    color: $incoming-name;
-                }
-
-                .text {
-                    color: $notice;
-                }
-            }
-
-            &.focus {
-                border-right: 2px solid blue;
-            }
-
-            &.mention {
-                .highlight {
-                    display: block;
-                    -webkit-box-flex: 0;
-                    color: yellow;
-                    margin-left: 0.5em;
-                }
-            }
-        }
-
-        .history {
-	        opacity: 0.5;
-        }
-
-
-        #topic {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            text-align: center;
-        }
+    .time {
+      color: $auxiliary;
     }
+
+    .sender {
+      color: $auxiliary;
+    }
+  }
+
+  .text {
+    -webkit-box-flex: 1;
+  }
+
+  .highlight {
+    display: none;
+  }
+
+  // special styles
+
+  &.incoming {
+    .sender .name {
+      color: $incoming-name;
+    }
+  }
+
+  &.outgoing {
+    .sender .name, .text {
+      color: $notice;
+    }
+  }
+
+  &.consecutive {
+    .time {
+      visibility: hidden;
+    }
+    &.message .sender {
+      visibility: hidden;
+    }
+  }
+
+  &.status, &.event {
+    .sender .name {
+      color: $incoming-name;
+    }
+
+    .text {
+      color: $notice;
+    }
+  }
+
+  &.focus {
+    border-right: 2px solid blue;
+  }
+
+  &.mention {
+    .highlight {
+      display: block;
+      -webkit-box-flex: 0;
+      color: yellow;
+      margin-left: 0.5em;
+    }
+  }
+}
+
+.history {
+	opacity: 0.5;
+}
+
+#topic {
+  position: fixed; top: 0; left: 0; width: 100%;
+  text-align: center;
+  color: $headline; background-color: $headline-background;
 }

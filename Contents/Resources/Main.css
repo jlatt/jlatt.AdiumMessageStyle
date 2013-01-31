@@ -1,51 +1,58 @@
 html {
   color: #eeeeee;
   background-color: black; }
-  html body {
-    margin: 0;
-    line-height: 1.3em; }
-    html body a {
-      color: #8db8e8; }
-    html body .line {
-      display: -webkit-box;
-      -webkit-box-orient: horizontal;
-      -webkit-box-pack: start;
-      padding: 0.1em; }
-      html body .line .fixed {
-        -webkit-box-flex: 0;
-        margin-right: 0.5em; }
-        html body .line .fixed .time {
-          color: #555555; }
-        html body .line .fixed .sender {
-          color: #555555; }
-      html body .line .text {
-        -webkit-box-flex: 1; }
-      html body .line .highlight {
-        display: none; }
-      html body .line.incoming .sender .name {
-        color: #60b042; }
-      html body .line.outgoing .sender .name, html body .line.outgoing .text {
-        color: #999999; }
-      html body .line.consecutive .time {
-        visibility: hidden; }
-      html body .line.consecutive.message .sender {
-        visibility: hidden; }
-      html body .line.status .sender .name, html body .line.event .sender .name {
-        color: #60b042; }
-      html body .line.status .text, html body .line.event .text {
-        color: #999999; }
-      html body .line.focus {
-        border-right: 2px solid blue; }
-      html body .line.mention .highlight {
-        display: block;
-        -webkit-box-flex: 0;
-        color: yellow;
-        margin-left: 0.5em; }
-    html body .history {
-      opacity: 0.5; }
-    html body #topic {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      text-align: center; }
+
+body {
+  margin: 0;
+  line-height: 1.3em; }
+
+a {
+  color: #8db8e8; }
+
+.line {
+  display: -webkit-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: start;
+  padding: 0.1em; }
+  .line .fixed {
+    -webkit-box-flex: 0;
+    margin-right: 0.5em; }
+    .line .fixed .time {
+      color: #555555; }
+    .line .fixed .sender {
+      color: #555555; }
+  .line .text {
+    -webkit-box-flex: 1; }
+  .line .highlight {
+    display: none; }
+  .line.incoming .sender .name {
+    color: #60b042; }
+  .line.outgoing .sender .name, .line.outgoing .text {
+    color: #999999; }
+  .line.consecutive .time {
+    visibility: hidden; }
+  .line.consecutive.message .sender {
+    visibility: hidden; }
+  .line.status .sender .name, .line.event .sender .name {
+    color: #60b042; }
+  .line.status .text, .line.event .text {
+    color: #999999; }
+  .line.focus {
+    border-right: 2px solid blue; }
+  .line.mention .highlight {
+    display: block;
+    -webkit-box-flex: 0;
+    color: yellow;
+    margin-left: 0.5em; }
+
+.history {
+  opacity: 0.5; }
+
+#topic {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #3083bc;
+  background-color: rgba(0, 0, 0, 0.5); }
