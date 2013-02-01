@@ -11,6 +11,7 @@ $highlight-auxiliary: lighten($auxiliary, 15%);
 $highlight-background: lighten($background, 25%);
 $headline-background: lighten($background, 15%);
 $highlight-color: yellow;
+$highlight-background: blue;
 
 html {
   color: $foreground;
@@ -91,10 +92,26 @@ a {
 
   &.outgoing {
     .sender .name {
-      color: $notice !important; // override sendercolor
+      color: $notice;
     }
     .text {
       color: $notice;
+    }
+  }
+
+  &.status, &.event {
+    .sender .name {
+      color: $incoming-name;
+    }
+    .text {
+      color: $notice;
+    }
+  }
+
+  &.focus {
+    .time {
+      color: $foreground;
+      background-color: $highlight-background;
     }
   }
 
@@ -105,20 +122,6 @@ a {
     .sender {
       display: none;
     }
-  }
-
-  &.status, &.event {
-    .sender .name {
-      color: $incoming-name;
-    }
-
-    .text {
-      color: $notice;
-    }
-  }
-
-  &.focus {
-    border-right: 0.5em solid $highlight-color;
   }
 
   &.mention.message {

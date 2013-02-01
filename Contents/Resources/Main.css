@@ -80,19 +80,20 @@ a {
   .line.incoming.SenderColor .name.twenty-five {
     color: #8b8b00; }
   .line.outgoing .sender .name {
-    color: #999999 !important; }
+    color: #999999; }
   .line.outgoing .text {
     color: #999999; }
-  .line.consecutive.message .time {
-    visibility: hidden; }
-  .line.consecutive.message .sender {
-    display: none; }
   .line.status .sender .name, .line.event .sender .name {
     color: #60b042; }
   .line.status .text, .line.event .text {
     color: #999999; }
-  .line.focus {
-    border-right: 0.5em solid yellow; }
+  .line.focus .time {
+    color: #eeeeee;
+    background-color: blue; }
+  .line.consecutive.message .time {
+    visibility: hidden; }
+  .line.consecutive.message .sender {
+    display: none; }
   .line.mention.message .time {
     color: yellow;
     visibility: visible; }
