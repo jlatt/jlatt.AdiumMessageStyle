@@ -87,9 +87,9 @@ a {
     color: #999999 !important; }
   .line.outgoing .text {
     color: #999999; }
-  .line.consecutive .time {
+  .line.consecutive.message .time {
     visibility: hidden; }
-  .line.consecutive .sender {
+  .line.consecutive.message .sender {
     display: none; }
   .line.status .sender .name, .line.event .sender .name {
     color: #60b042; }
