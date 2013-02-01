@@ -54,12 +54,6 @@ a {
     color: $auxiliary;
   }
 
-  .highlight {
-    display: none;
-    margin-left: 0.5em;
-    color: $highlight-color;
-  }
-
   // special styles
 
   &.incoming {
@@ -128,8 +122,8 @@ a {
   }
 
   &.mention {
-    .highlight {
-      display: block;
+    .time {
+      color: $highlight-color;
     }
   }
 }
