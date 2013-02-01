@@ -93,8 +93,9 @@ a {
     color: #999999; }
   .line.focus {
     border-right: 0.5em solid yellow; }
-  .line.mention .time {
-    color: yellow; }
+  .line.mention.message .time {
+    color: yellow;
+    visibility: visible; }
 
 .history {
   opacity: 0.75; }

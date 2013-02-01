@@ -121,9 +121,10 @@ a {
     border-right: 0.5em solid $highlight-color;
   }
 
-  &.mention {
+  &.mention.message {
     .time {
       color: $highlight-color;
+      visibility: visible;
     }
   }
 }
