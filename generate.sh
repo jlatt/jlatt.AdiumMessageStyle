@@ -1,2 +1,2 @@
 #!/bin/bash
-sass Contents/Resources/Main.scss Contents/Resources/Main.css
+sass Main.scss Contents/Resources/Main.css

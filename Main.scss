@@ -10,8 +10,8 @@ $incoming-name: #60b042;
 $highlight-auxiliary: lighten($auxiliary, 15%);
 $highlight-background: lighten($background, 25%);
 $headline-background: lighten($background, 15%);
-$highlight-color: yellow;
-$highlight-background: blue;
+$highlight-color: #ffff00;
+$highlight-background: #0000ff;
 
 html {
   color: $foreground;
