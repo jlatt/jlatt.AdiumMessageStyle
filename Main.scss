@@ -130,6 +130,12 @@ a {
       visibility: visible;
     }
   }
+
+  &.consecutive.mention.message {
+    .time {
+      color: red;
+    }
+  }
 }
 
 .history {

@@ -97,6 +97,8 @@ a {
   .line.mention.message .time {
     color: yellow;
     visibility: visible; }
+  .line.consecutive.mention.message .time {
+    color: red; }
 
 .history {
   opacity: 0.75; }
