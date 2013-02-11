@@ -7,11 +7,11 @@ $link-hover: lighten($link, 10%);
 $link-active: darken($link, 10%);
 $headline: #3083bc;
 $incoming-name: #60b042;
+$highlight-color: #ffff00;
 $highlight-auxiliary: lighten($auxiliary, 15%);
 $highlight-background: lighten($background, 25%);
 $headline-background: lighten($background, 15%);
-$highlight-color: #ffff00;
-$highlight-background: #0000ff;
+
 
 html {
   color: $foreground;
@@ -109,9 +109,9 @@ a {
   }
 
   &.focus {
-    .time {
+    background-color: $highlight-background;
+    .time, .sender .name, .text {
       color: $foreground;
-      background-color: $highlight-background;
     }
   }
 
@@ -128,12 +128,6 @@ a {
     .time {
       color: $highlight-color;
       visibility: visible;
-    }
-  }
-
-  &.consecutive.mention.message {
-    .time {
-      color: red;
     }
   }
 }

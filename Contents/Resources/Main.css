@@ -87,9 +87,10 @@ a {
     color: #60b042; }
   .line.status .text, .line.event .text {
     color: #999999; }
-  .line.focus .time {
-    color: #eeeeee;
-    background-color: blue; }
+  .line.focus {
+    background-color: #404040; }
+    .line.focus .time, .line.focus .sender .name, .line.focus .text {
+      color: #eeeeee; }
   .line.consecutive.message .time {
     visibility: hidden; }
   .line.consecutive.message .sender {
@@ -97,8 +98,6 @@ a {
   .line.mention.message .time {
     color: yellow;
     visibility: visible; }
-  .line.consecutive.mention.message .time {
-    color: red; }
 
 .history {
   opacity: 0.75; }
