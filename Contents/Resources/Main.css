@@ -17,7 +17,8 @@ a {
   display: -webkit-box;
   -webkit-box-orient: horizontal;
   -webkit-box-pack: start;
-  padding: 0 0.25em; }
+  padding: 0 0.25em;
+  border-left: 0.25em solid black; }
   .line .fixed {
     -webkit-box-flex: 0; }
   .line .flexible {
@@ -88,16 +89,13 @@ a {
   .line.status .text, .line.event .text {
     color: #999999; }
   .line.focus {
-    background-color: #404040; }
-    .line.focus .time, .line.focus .sender .name, .line.focus .text {
-      color: #eeeeee; }
+    border-left-color: blue; }
   .line.consecutive.message .time {
     visibility: hidden; }
   .line.consecutive.message .sender {
     display: none; }
-  .line.mention.message .time {
-    color: yellow;
-    visibility: visible; }
+  .line.mention.message {
+    border-left-color: yellow; }
 
 .history {
   opacity: 0.75; }

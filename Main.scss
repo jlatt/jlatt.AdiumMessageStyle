@@ -37,6 +37,7 @@ a {
   display: -webkit-box;
   -webkit-box-orient: horizontal; -webkit-box-pack: start;
   padding: 0 0.25em;
+  border-left: 0.25em solid $background;
 
   .fixed {
     -webkit-box-flex: 0;
@@ -109,10 +110,7 @@ a {
   }
 
   &.focus {
-    background-color: $highlight-background;
-    .time, .sender .name, .text {
-      color: $foreground;
-    }
+    border-left-color: blue;
   }
 
   &.consecutive.message {
@@ -125,10 +123,7 @@ a {
   }
 
   &.mention.message {
-    .time {
-      color: $highlight-color;
-      visibility: visible;
-    }
+    border-left-color: yellow;
   }
 }
 
