@@ -11,6 +11,7 @@ $highlight-color: #ffff00;
 $highlight-auxiliary: lighten($auxiliary, 15%);
 $highlight-background: lighten($background, 25%);
 $headline-background: lighten($background, 15%);
+$status-color: #2ca3e3;
 
 
 html {
@@ -102,10 +103,31 @@ a {
 
   &.status, &.event {
     .sender .name {
-      color: $incoming-name;
+      color: $status-color;
     }
     .text {
       color: $notice;
+    }
+  }
+
+  &.action {
+    .sender {
+      display: none;
+    }
+
+    .text {
+      &::before {
+        content: "• ";
+        color: $status-color;
+      }
+      .actionMessageUserName {
+        display: inline;
+      }
+      .actionMessageBody {
+        &::before, &::after {
+          content: none;
+        }
+      }
     }
   }
 
