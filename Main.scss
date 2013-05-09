@@ -116,7 +116,7 @@ a {
     }
 
     .text {
-      &::before {
+      &:before {
         content: "• ";
         color: $status-color;
       }
@@ -124,7 +124,10 @@ a {
         display: inline;
       }
       .actionMessageBody {
-        &::before, &::after {
+        &:before {
+          content: " ";
+        }
+        &:after {
           content: none;
         }
       }

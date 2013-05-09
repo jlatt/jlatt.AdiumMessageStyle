@@ -91,12 +91,14 @@ a {
     color: #999999; }
   .line.action .sender {
     display: none; }
-  .line.action .text::before {
+  .line.action .text:before {
     content: "• ";
     color: #2ca3e3; }
   .line.action .text .actionMessageUserName {
     display: inline; }
-  .line.action .text .actionMessageBody::before, .line.action .text .actionMessageBody::after {
+  .line.action .text .actionMessageBody:before {
+    content: " "; }
+  .line.action .text .actionMessageBody:after {
     content: none; }
   .line.focus {
     border-left-color: blue; }
