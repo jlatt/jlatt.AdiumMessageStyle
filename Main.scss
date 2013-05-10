@@ -94,10 +94,7 @@ a {
 
   &.outgoing {
     .sender .name {
-      color: $notice;
-    }
-    .text {
-      color: $notice;
+      color: $foreground;
     }
   }
 
