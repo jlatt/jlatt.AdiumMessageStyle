@@ -6,7 +6,7 @@ $('#Chat').on('DOMNodeInserted', '.line', function(e) {
 
     $line.addClass('hipchat-fixed');
     var sender = $line.find('.sender .name').text();
-    if (!(/^(?:github|jenkins)$/i).test(sender)) {
+    if (!(/^(github|jenkins|heroku)$/i).test(sender)) {
         return;
     }
 
