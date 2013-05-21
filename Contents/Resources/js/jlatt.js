@@ -1,15 +1,9 @@
-$('#Chat').on('DOMNodeInserted', '.line', function(e) {
-    var $line = $(this);
-    if ($line.is('.hipchat-fixed')) {
-        return;
-    }
-
-    $line.addClass('hipchat-fixed');
+$('#Chat').on('DOMNodeInserted', '.line:not(.html-fixed)', function(e) {
+    var $line = $(this).addClass('html-fixed');
     var sender = $line.find('.sender .name').text();
-    if (!(/^(github|jenkins|heroku|pivotal)$/i).test(sender)) {
+    if (!(/^(GitHub|Jenkins|Heroku|Pivotal)$/).test(sender)) {
         return;
     }
-
     var $text = $line.find('.text');
     $text.html($text.text());
 });
